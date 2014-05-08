@@ -1,0 +1,92 @@
+<html>
+<style>
+	#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+  width : 500px;
+  height : 500px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 940px;
+  height: 400px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.list_prev, a.list_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.list_prev:hover, a.list_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.list_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.list_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+</style>
+<title>
+Slider
+</title>
+<h1 align="center">Slider</h1>
+<div id="slider"><!-- Link for prev and next slider navigation-->
+  <a href="#" class="list_next">>></a>
+  <a href="#" class="list_prev"><</a>
+  <ul>
+    <li><img src="img/slide-1.jpg"/></li>
+    <li><img src="img/slide-2.jpg"/></li>
+    <li><img src="img/slide-3.jpg"/></li>
+  </ul>  
+</div>
+
+<div class="slider_option">
+  <input type="checkbox" id="checkbox">
+  <label for="checkbox">Autoplay Slider</label>
+</div> 
+<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="mincode.js"></script>
+</html>
